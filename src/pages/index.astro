@@ -4,6 +4,7 @@ import Card from "../components/Card.astro";
 import MyCard from "../components/Vue/MyCard.vue";
 import Header from "../components/Vue/Header.vue";
 import Footer from "../components/Vue/Footer.vue";
+import Contenido from "../components/Vue/Contenido.vue";
 ---
 
 <!DOCTYPE html>
@@ -12,11 +13,12 @@ import Footer from "../components/Vue/Footer.vue";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astro App with Tailwind and Vue</title>
-    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="shortcut icon" href="https://previews.123rf.com/images/moleks/moleks1506/moleks150600036/40756269-vectorial-medical-icon-escudo-cruz-plana-de-salud-m%C3%A9dica.jpg" type="image/x-icon">
   </head>
   <body class="bg-gray-100 flex flex-col min-h-screen">
     <Header />
-    <main class="flex-grow flex items-center justify-center">
+    <main class="flex-col flex items-center justify-center">
+      <Contenido/>
       <MyCard />
     </main>
     <Footer />

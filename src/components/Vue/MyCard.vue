@@ -1,7 +1,7 @@
 <!-- src/components/MyCard.vue -->
 <template>
-  <div class="bg-white rounded-lg shadow-md p-8 max-w-md mx-auto">
-    <h2 class="text-3xl font-bold mb-6">Bienvenido</h2>
+  <div class="bg-gray-500 rounded-lg shadow-md p-8 max-w-md mx-auto">
+    <h2 class="text-3xl font-bold mb-6">Iniciar valoración</h2>
     <p class="mb-6">Seleccione una opción:</p>
     <div class="space-y-4">
       <a href="/Medico"
@@ -25,6 +25,4 @@ export default {
 };
 </script>
 
-<style scoped>
-/* Puedes añadir estilos adicionales aquí si lo deseas */
-</style>
+

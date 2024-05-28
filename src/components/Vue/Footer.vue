@@ -1,7 +1,7 @@
 
 <!-- src/components/Footer.vue -->
 <template>
-    <footer class="bg-gray-800 text-white py-4">
+    <footer class="bg-gray-800 text-white py-4 max-w-full">
       <div class="container mx-auto text-center">
         <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
         <nav>
@@ -18,8 +18,3 @@
     name: 'Footer'
   };
   </script>
-  
-  <style scoped>
-  /* Puedes añadir estilos adicionales aquí si lo deseas */
-  </style>
-  
