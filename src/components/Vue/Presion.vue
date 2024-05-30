@@ -87,7 +87,19 @@
       };
   
       return { systolic, diastolic, message, checkBloodPressure };
+    },
+    data() {
+    return {
+      presionData: null  
     }
+  },
+  methods: {
+
+    calculateIMC() {
+
+      this.presionData = { systolic, diastolic, message, checkBloodPressure };
+    }
+  }
   };
   </script>
   

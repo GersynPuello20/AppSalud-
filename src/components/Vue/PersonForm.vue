@@ -62,6 +62,8 @@
   </template>
   
   <script>
+import type DatosPerson from './DatosPerson.vue';
+
   export default {
     data() {
       return {
@@ -77,7 +79,7 @@
     },
     methods: {
       submitForm() {
-        // Manejar la lógica de envío del formulario
+        
         alert('Formulario enviado');
         console.log({
           firstName: this.firstName,
@@ -90,11 +92,30 @@
           medicalHistory: this.medicalHistory
         });
       }
+    },
+    data() {
+    return {
+      DatosPerson: null  
     }
+  },
+  methods: {
+
+    calculateIMC() {
+
+      this.DatosPerson = { firstName: this.firstName,
+          lastName: this.lastName,
+          age: this.age,
+          idType: this.idType,
+          idNumber: this.idNumber,
+          gender: this.gender,
+          maritalStatus: this.maritalStatus,
+          medicalHistory: this.medicalHistory};
+    }
+  }
   };
   </script>
   
   <style scoped>
-  /* Estilos específicos para PersonForm.vue */
+
   </style>
   

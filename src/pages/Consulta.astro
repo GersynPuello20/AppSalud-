@@ -26,7 +26,7 @@ import Back from "../components/Vue/Back.vue";
           Bienvenido a CataKids, aquí puedes registrar tus datos para brindarte
           una mejor experiencia y un resultado mucho más acertado.
         </p>
-        <PersonForm client:load />
+        <PersonForm v-model="PersonData" />
       </div>
       <h1 class="text-3xl font-bold text-center mb-4">
         Índice de masa corporal
@@ -39,7 +39,7 @@ import Back from "../components/Vue/Back.vue";
           las herramientas necesarias para <br /> gestionar tu bienestar. Por favor,
           utiliza las herramientas proporcionadas a continuación para empezar.
         </p>
-        <IMCForm client:load />
+        <IMCForm v-model="ImcData" />
       </div>
       <h1 class="text-3xl font-bold text-center mb-4 mt-5">Glucosa</h1>
       <div class="text-box bg-white p-6 rounded-lg shadow-md mx-auto">
@@ -48,7 +48,7 @@ import Back from "../components/Vue/Back.vue";
           Nuestro objetivo es ayudarte a mantener un estilo de vida saludable y proporcionarte
           las herramientas necesarias para <br /> gestionar tu bienestar.
         </p>
-        <Glucosa client:load />
+        <Glucosa v-model="glucosaData" />
       </div>
       <h1 class="text-3xl font-bold text-center mb-4 mt-5">Presión arterial</h1>
       <div class="text-box bg-white p-6 rounded-lg shadow-md mx-auto">
@@ -58,7 +58,7 @@ import Back from "../components/Vue/Back.vue";
           Nuestro objetivo es ayudarte a mantener un estilo de vida saludable y proporcionarte
           las herramientas necesarias para <br /> gestionar tu bienestar.
         </p>
-        <Presion client:load />
+        <Presion v-mode="presionData" />
       </div>
       <div class="flex justify-end">
         <div class="flex justify-center items-center font-normal bg-blue-500 hover:bg-blue-400 rounded-lg h-10 w-56">
@@ -69,3 +69,16 @@ import Back from "../components/Vue/Back.vue";
     <Footer />
   </body>
 </html>
+
+<script>
+  export default {
+    data() {
+      return {
+        imcData: null,
+        glucosaData: null,
+        presionData: null,
+        personData : null
+      };
+    }
+  };
+  </script>

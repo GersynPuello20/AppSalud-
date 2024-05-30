@@ -2,6 +2,7 @@
 import Header from "../components/Vue/Header.vue";
 import Footer from "../components/Vue/Footer.vue";
 import Back from "../components/Vue/Back.vue";
+import DatosPerson from "../components/Vue/DatosPerson.vue";
 ---
 
 <!DOCTYPE html>
@@ -18,7 +19,19 @@ import Back from "../components/Vue/Back.vue";
       <Back client:load/>
       <h1 class="text-3xl font-bold mb-4">Nutricionista</h1>
       <p>Contenido de la página del nutricionista.</p>
+      <DatosPerson : ImcData="ImcData" : allData="allData"/>
     </main>
     <Footer />
   </body>
 </html>
+
+<script>
+  export default {
+    props: {
+      ImcData: Object,
+      glucosaData: Object,
+      presionData: Object,
+      personData: Object
+    }
+  };
+  </script>

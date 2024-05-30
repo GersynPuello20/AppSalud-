@@ -21,7 +21,7 @@
       </div>
       <div class="md:w-1/2 md:pl-4 mt-6 md:mt-0">
         <h2 class="text-xl font-bold mb-4">Clasificación del IMC</h2>
-        <table class="min-w-full border border-gray-200" :class="imcClass">
+        <table class="min-w-full bg-white border border-gray-200">
           <thead>
             <tr>
               <th class="px-4 py-2 border-b">IMC</th>
@@ -77,19 +77,22 @@ export default {
       }
     };
 
-    const imcClass = () => {
-      if (classification.value === 'Normal') {
-        return 'bg-green-200';
-      } else if (classification.value === 'Sobrepeso' || classification.value === 'Obesidad') {
-        return 'bg-red-200';
-      } else {
-        return '';
-      }
-    };
+    return { height, weight, imc, classification, calculateIMC };
+  },
+    
+  data() {
+    return {
+      ImcData: null  
+    }
+  },
+  methods: {
 
-    return { height, weight, imc, classification, calculateIMC, imcClass };
+    calculateIMC() {
+
+      this.ImcData = { height, weight, imc, classification, calculateIMC };
+    }
   }
-};
+}
 </script>
 
 <style scoped>
