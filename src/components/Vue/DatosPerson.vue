@@ -57,6 +57,9 @@
         <input type="text" v-model="bloodPressure" class="mt-1 block w-full p-2 border rounded-md" required>
       </div>
       <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg">Guardar Datos</button>
+      <div class="h-10 mt-3 w-52 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg">
+        <a href="/Medico">Consulta con un médico</a>
+      </div>
     </form>
     <button @click="showModal = true" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg mt-4">Ver
       Datos y
