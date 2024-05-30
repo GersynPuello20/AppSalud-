@@ -1,5 +1,7 @@
+
 <template>
     <div class="text-box bg-white p-6 rounded-lg shadow-md mx-auto">
+
         <h1 class="text-3xl font-bold text-center mb-4 mt-5">
                 Cuidado de la salud
             </h1>

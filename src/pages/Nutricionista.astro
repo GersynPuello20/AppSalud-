@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Vue/Header.vue";
 import Footer from "../components/Vue/Footer.vue";
+import Back from "../components/Vue/Back.vue";
 ---
 
 <!DOCTYPE html>
@@ -14,6 +15,7 @@ import Footer from "../components/Vue/Footer.vue";
   <body class="bg-gray-100 flex flex-col min-h-screen">
     <Header />
     <main class="flex-grow container mx-auto p-4">
+      <Back client:load/>
       <h1 class="text-3xl font-bold mb-4">Nutricionista</h1>
       <p>Contenido de la página del nutricionista.</p>
     </main>

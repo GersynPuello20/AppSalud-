@@ -1,8 +1,8 @@
 <template>
     <div class="max-w-7xl mx-auto py-12 px-6 ">
-        <h1 class="text-7xl font-bold mt-16 h-52  my-auto text-center">¡Niños del Catatumbo!</h1>
+        <h1 class="text-7xl font-bold mt-16 h-40  my-auto text-center">¡Niños del Catatumbo!</h1>
         <div class="p-8 font-normal">
-            
+
             <p class="text-xl mb-4">
                 El Catatumbo, una región afectada por décadas de conflicto y pobreza, los niños enfrentan numerosos
                 problemas de salud. La falta de acceso a servicios médicos, la malnutrición y las condiciones de vida
@@ -11,7 +11,7 @@
             </p>
             <img src="/src/components/Images/nino-campesino.avif" alt="Niños campesinos"
                 class="w-full h-auto mb-6 rounded-lg shadow-md">
-            
+
             <p class="text-xl mb-4">
                 Nuestra página se ha creado con el propósito de ayudar a estos niños. Queremos proporcionar una
                 plataforma que informe sobre la situación en el Catatumbo, sensibilice a la comunidad global y facilite
@@ -31,15 +31,22 @@
             </ul>
 
         </div>
-        <div class="w-full lg:w-1/2 p-4">
-            <img src="https://i.pinimg.com/originals/01/94/ad/0194ad39d8262c40448d75cf1bcfb1d6.jpg"
-                alt="Niños campesinos principal" class="w-full h-auto rounded-lg shadow-md mb-6">
 
-        </div>
 
         <div class="max-w-7xl mx-auto py-12 px-6">
 
-            <div class="flex flex-col w-auto h-auto space-y-6">
+            <div class="flex flex-col w-auto h-auto space-y-16">
+                <div class="flex flex-col lg:flex-row-reverse items-center lg:justify-start  rounded-md">
+                    <div class="lg:flex-1 p-4 flex flex-col justify-center items-center lg:items-start">
+                        <p class="text-2xl mb-4 text-justify">
+                            Luchemos juntos por nuestros niños y jóvenes del Catatumbo.
+                        </p>
+                    </div>
+                    <div class="lg:flex-1 p-4 flex justify-center lg:justify-end">
+                        <img src="/src/components/Images/ninos-sentados.jpg"
+                            alt="Niños campesinos 3" class="w-auto h-full rounded-lg shadow-md">
+                    </div>
+                </div>
                 <div class="flex flex-col lg:flex-row items-center lg:justify-start  bg-blue-500 rounded-md">
                     <div class="lg:flex-1 p-4 flex flex-col justify-center items-center lg:items-start">
                         <p class="text-2xl mb-4 text-justify">

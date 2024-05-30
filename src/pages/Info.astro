@@ -2,6 +2,7 @@
 import Acerca from "../components/Vue/Acerca.vue";
 import Header from "../components/Vue/Header.vue";
 import Footer from "../components/Vue/Footer.vue";
+import Back from "../components/Vue/Back.vue";
 ---
 
 <html lang="en">
@@ -13,6 +14,7 @@ import Footer from "../components/Vue/Footer.vue";
 <body>
     <Header/>
     <div class="text-box bg-white p-6 rounded-lg shadow-md mx-auto">
+        <Back client:load/>
         <Acerca client:load/>
     </div>
     <Footer/>
