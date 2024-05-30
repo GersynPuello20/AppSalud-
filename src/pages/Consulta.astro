@@ -6,6 +6,8 @@ import Glucosa from "../components/Vue/Glucosa.vue";
 import Presion from "../components/Vue/Presion.vue";
 import PersonForm from "../components/Vue/PersonForm.vue";
 import Back from "../components/Vue/Back.vue";
+import Dietas from "../components/Vue/Dietas.vue";
+import DatosPerson from "../components/Vue/DatosPerson.vue";
 ---
 
 <!doctype html>
@@ -20,65 +22,20 @@ import Back from "../components/Vue/Back.vue";
     <Header />
     <main class="flex-grow container mx-auto p-4 space-y-10">
       <Back client:load />
-      <h1 class="text-3xl font-bold text-center mb-4">Ingrese sus datos</h1>
+      <!-- <h1 class="text-3xl font-bold text-center mb-4">Ingrese sus datos</h1>
+      <div class="text-box bg-white p-6 rounded-lg shadow-md mx-auto">
+        
+        <PersonForm client:load />
+      </div> -->
+      <h1 class="text-3xl font-bold text-center mb-4 mt-5">Datos del Paciente</h1>
       <div class="text-box bg-white p-6 rounded-lg shadow-md mx-auto">
         <p class="text-center mb-8 font-medium">
           Bienvenido a CataKids, aquí puedes registrar tus datos para brindarte
           una mejor experiencia y un resultado mucho más acertado.
         </p>
-        <PersonForm v-model="PersonData" />
-      </div>
-      <h1 class="text-3xl font-bold text-center mb-4">
-        Índice de masa corporal
-      </h1>
-      <div class="text-box bg-white p-6 rounded-lg shadow-md mx-auto">
-        <p class="text-center mb-8 font-medium">
-          Aquí puedes calcular tu Índice de Masa Corporal (IMC) y recibir
-          consejos de salud personalizados basados en tus resultados. <br />
-          Nuestro objetivo es ayudarte a mantener un estilo de vida saludable y proporcionarte
-          las herramientas necesarias para <br /> gestionar tu bienestar. Por favor,
-          utiliza las herramientas proporcionadas a continuación para empezar.
-        </p>
-        <IMCForm v-model="ImcData" />
-      </div>
-      <h1 class="text-3xl font-bold text-center mb-4 mt-5">Glucosa</h1>
-      <div class="text-box bg-white p-6 rounded-lg shadow-md mx-auto">
-        <p class="text-center mb-8 font-medium">
-          Aquí puedes registrar los valores de tu glucosa día a día <br />
-          Nuestro objetivo es ayudarte a mantener un estilo de vida saludable y proporcionarte
-          las herramientas necesarias para <br /> gestionar tu bienestar.
-        </p>
-        <Glucosa v-model="glucosaData" />
-      </div>
-      <h1 class="text-3xl font-bold text-center mb-4 mt-5">Presión arterial</h1>
-      <div class="text-box bg-white p-6 rounded-lg shadow-md mx-auto">
-        <p class="text-center mb-8 font-medium">
-          Aquí puedes registrar los valores de tu presión arterial día a día <br
-          />
-          Nuestro objetivo es ayudarte a mantener un estilo de vida saludable y proporcionarte
-          las herramientas necesarias para <br /> gestionar tu bienestar.
-        </p>
-        <Presion v-mode="presionData" />
-      </div>
-      <div class="flex justify-end">
-        <div class="flex justify-center items-center font-normal bg-blue-500 hover:bg-blue-400 rounded-lg h-10 w-56">
-          <a href="/Nutricionista">Ir a nutricionista</a>
-        </div>
+        <DatosPerson client:load />
       </div>
     </main>
     <Footer />
   </body>
 </html>
-
-<script>
-  export default {
-    data() {
-      return {
-        imcData: null,
-        glucosaData: null,
-        presionData: null,
-        personData : null
-      };
-    }
-  };
-  </script>

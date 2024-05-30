@@ -9,7 +9,7 @@
             <nav>
                 <a href="/" class="px-4">Inicio</a>
                 <a href="/Info" class="px-4">Acerca de</a>
-                <a href="/contact" class="px-4">Contacto</a>
+                <!-- <a href="/contact" class="px-4">Contacto</a> -->
             </nav>
         </div>
     </header>

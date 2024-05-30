@@ -62,7 +62,7 @@
   </template>
   
   <script>
-import type DatosPerson from './DatosPerson.vue';
+
 
   export default {
     data() {
@@ -93,25 +93,33 @@ import type DatosPerson from './DatosPerson.vue';
         });
       }
     },
-    data() {
-    return {
-      DatosPerson: null  
-    }
-  },
-  methods: {
+    // Modifica la función submitForm para guardar los datos en el almacenamiento local del navegador
+submitForm() {
+    // Guardar los datos en el almacenamiento local
+    localStorage.setItem('datosUsuario', JSON.stringify({
+        firstName: this.firstName,
+        lastName: this.lastName,
+        age: this.age,
+        idType: this.idType,
+        idNumber: this.idNumber,
+        gender: this.gender,
+        maritalStatus: this.maritalStatus,
+        medicalHistory: this.medicalHistory
+    }));
 
-    calculateIMC() {
+    alert('Formulario enviado');
+    console.log('Datos guardados:', {
+        firstName: this.firstName,
+        lastName: this.lastName,
+        age: this.age,
+        idType: this.idType,
+        idNumber: this.idNumber,
+        gender: this.gender,
+        maritalStatus: this.maritalStatus,
+        medicalHistory: this.medicalHistory
+    });
+}
 
-      this.DatosPerson = { firstName: this.firstName,
-          lastName: this.lastName,
-          age: this.age,
-          idType: this.idType,
-          idNumber: this.idNumber,
-          gender: this.gender,
-          maritalStatus: this.maritalStatus,
-          medicalHistory: this.medicalHistory};
-    }
-  }
   };
   </script>
   

@@ -68,18 +68,6 @@ export default {
     };
 
     return { glucose, message, checkGlucoseLevel };
-  },
-  data() {
-    return {
-      glucosaData: null  
-    }
-  },
-  methods: {
-
-    calculateIMC() {
-
-      this.glucosaData = { glucose, message, checkGlucoseLevel };
-    }
   }
 
 };

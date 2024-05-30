@@ -19,7 +19,7 @@ import DatosPerson from "../components/Vue/DatosPerson.vue";
       <Back client:load/>
       <h1 class="text-3xl font-bold mb-4">Nutricionista</h1>
       <p>Contenido de la página del nutricionista.</p>
-      <DatosPerson : ImcData="ImcData" : allData="allData"/>
+      <DatosPerson :personData="personData" :imcData="imcData" :glucosaData="glucosaData" :presionData="presionData" />
     </main>
     <Footer />
   </body>

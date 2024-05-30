@@ -78,19 +78,6 @@ export default {
     };
 
     return { height, weight, imc, classification, calculateIMC };
-  },
-    
-  data() {
-    return {
-      ImcData: null  
-    }
-  },
-  methods: {
-
-    calculateIMC() {
-
-      this.ImcData = { height, weight, imc, classification, calculateIMC };
-    }
   }
 }
 </script>

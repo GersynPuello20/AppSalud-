@@ -7,6 +7,14 @@
   </button>
 </template>
 
+<!-- <div class="flex justify-end">
+  <div
+    class="flex justify-center items-center font-normal bg-blue-500 hover:bg-blue-400 rounded-lg h-10 w-56"
+  >
+    <a href="/Nutricionista">Ir a nutricionista</a>
+  </div>
+</div> -->
+
 <script>
 export default {
   methods: {
